@@ -45,10 +45,15 @@ collect enough information to write a clear brief. Don't assume — ask.
 
 Key questions to cover:
 
+### Goals of the Gathering
+
 - **Audience**: Who will be in the room? Roles, seniority, sector, expertise.
 - **Commissioning context**: Who asked for this? What's the broader programme?
 - **Workshop format**: What kind of session is this? (Reference `workshop-types.md`)
 - **Desired outcome**: What should participants walk away with?
+
+### Scenario Assumptions
+
 - **Horizon**: Is this an H1 (continuation), H2 (emerging change), or H3
   (transformative) scenario? This shapes the register of the entire piece.
 - **AI capability assumptions**: What can AI do in this world? Use the three
