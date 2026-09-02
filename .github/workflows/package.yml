@@ -1,0 +1,45 @@
+name: Package skill
+
+# Builds the distributable skill zip via scripts/make-zip.sh.
+# - On every push/PR: uploads the zip as a workflow artifact for download.
+# - On a version tag (v*): also attaches the zip to a GitHub Release.
+# - Can be run on demand from the Actions tab.
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build zip
+        id: build
+        run: |
+          name="${GITHUB_REPOSITORY##*/}"
+          out="${RUNNER_TEMP}/${name}.zip"
+          scripts/make-zip.sh "$out"
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "path=$out" >> "$GITHUB_OUTPUT"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.build.outputs.name }}
+          path: ${{ steps.build.outputs.path }}
+
+      - name: Attach zip to release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ steps.build.outputs.path }}
