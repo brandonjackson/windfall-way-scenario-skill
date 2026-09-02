@@ -5,7 +5,8 @@ Utility scripts for maintaining and distributing this skill.
 ## make-zip.sh
 
 Packages the skill directory into a distributable `.zip` archive, excluding
-the `.git` directory and OS/build cruft (`.DS_Store`, `__pycache__`, `.pyc`).
+anything whose name starts with a period (`.git`, `.github`, `.gitignore`,
+`.DS_Store`, …) plus other build cruft (`__pycache__`, `.pyc`).
 
 ```sh
 # Write to <skill-root>/<skill-directory-name>.zip
