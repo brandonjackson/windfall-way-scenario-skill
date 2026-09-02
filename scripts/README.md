@@ -8,7 +8,7 @@ Packages the skill directory into a distributable `.zip` archive, excluding
 the `.git` directory and OS/build cruft (`.DS_Store`, `__pycache__`, `.pyc`).
 
 ```sh
-# Write to ./<skill-directory-name>.zip
+# Write to <skill-root>/<skill-directory-name>.zip
 scripts/make-zip.sh
 
 # Write to a specific path
