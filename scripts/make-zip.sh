@@ -39,10 +39,11 @@ rm -f "$output"
 parent_dir="$(dirname "$root_dir")"
 cd "$parent_dir"
 
+# Exclude anything whose name starts with a period, at any depth (.git,
+# .github, .gitignore, .DS_Store, …) — dotfiles rarely belong in a
+# distributable — plus other build cruft.
 zip -r -q "$output" "$skill_name" \
-  -x "$skill_name/.git/*" \
-  -x "$skill_name/.git" \
-  -x "*/.DS_Store" \
+  -x "*/.*" \
   -x "*/__pycache__/*" \
   -x "*.pyc" \
   -x "*.zip"
