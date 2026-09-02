@@ -6,8 +6,9 @@
 # Usage:
 #   scripts/make-zip.sh [output.zip]
 #
-# If no output path is given, the archive is written to
-# ./<skill-directory-name>.zip in the current working directory.
+# If no output path is given, the archive is written to the skill root as
+# <skill-directory-name>.zip. A relative path argument is resolved against
+# the current working directory.
 
 set -euo pipefail
 
@@ -17,8 +18,9 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 root_dir="$(cd "$script_dir/.." && pwd)"
 skill_name="$(basename "$root_dir")"
 
-# Determine output path (absolute), defaulting to CWD/<skill_name>.zip.
-output="${1:-$PWD/$skill_name.zip}"
+# Determine output path (absolute), defaulting to the skill root:
+# <root_dir>/<skill_name>.zip. A relative argument is resolved against CWD.
+output="${1:-$root_dir/$skill_name.zip}"
 case "$output" in
   /*) : ;;                    # already absolute
   *)  output="$PWD/$output" ;;
@@ -42,6 +44,7 @@ zip -r -q "$output" "$skill_name" \
   -x "$skill_name/.git" \
   -x "*/.DS_Store" \
   -x "*/__pycache__/*" \
-  -x "*.pyc"
+  -x "*.pyc" \
+  -x "*.zip"
 
 echo "Created $output"
