@@ -214,8 +214,10 @@ Refine the scenario to provoke excellent workshop conversation.
 
 Apply the questions in `references/stress-tests.md` to the draft. Work
 through internal consistency, audience resonance, plausibility, productive
-tension, emotional register, coverage, and workshop dynamics. Document
-findings.
+tension, emotional register, coverage, and workshop dynamics. Then run each
+of the four judges (Economist, Citizen, Policymaker, Storyteller) against
+the draft — they pressure-test the scenario from distinct standpoints and
+will surface flaws the category questions miss. Document findings.
 
 ### 6b. Conversation Simulation
 
