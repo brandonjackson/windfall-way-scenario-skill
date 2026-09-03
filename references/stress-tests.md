@@ -76,5 +76,87 @@ inform the tuning pass (Stage 6).
 
 ---
 
+## Judges
+
+Four adversarial readers, each stress-testing the scenario from a
+different standpoint. Run each judge after the category questions
+above — they overlap deliberately, because the same flaw looks
+different depending on who it bothers.
+
+### The Economist
+
+*Cares about: internal consistency of the economic logic.*
+
+- Trace every causal claim in the scenario. Does each link actually
+  follow from the last, or is there a gap papered over with
+  confident prose?
+- Are the macro and micro stories consistent? (If GDP is growing,
+  who is spending? If unemployment is high, who is producing?)
+- Would a competent economist accept the fiscal arithmetic, or
+  would they dismiss the scenario before the workshop conversation
+  even starts?
+- Does the scenario confuse a one-time level shift with a growth
+  rate change? A stock with a flow? A nominal figure with a real one?
+- Are the timelines for economic adjustment plausible? Markets,
+  labour, and institutions move at different speeds — does the
+  scenario respect that?
+
+### The Citizen
+
+*Cares about: standards of living and the social contract.*
+
+- Can an ordinary person see themselves in this world? Is there at
+  least one moment where macro dynamics land as lived experience?
+- What happens to the median household, not the mean? Does the
+  scenario show who gains and who loses, or does it hide
+  distributional pain behind aggregate numbers?
+- Is the social contract legible? Can a reader tell what the
+  implicit deal between citizen and state is in this world — and
+  where it's fraying?
+- Does the scenario acknowledge the things people actually care
+  about — housing, health, education, security, dignity at work —
+  or does it stay at the level of GDP and productivity?
+- Would a non-expert read this and feel provoked to discuss, or
+  would they feel talked past?
+
+### The Policymaker
+
+*Cares about: whether the scenario feels serious enough to work with.*
+
+- Would a senior official take this into a meeting, or would they
+  worry it makes them look naive?
+- Are the institutional references accurate and current? Wrong
+  details — a misnamed body, an outdated process — erode
+  credibility fast.
+- Does the scenario present a problem a government could actually
+  face, or is it a thought experiment with no policy surface?
+- Are the policy levers implied by the scenario real and
+  recognisable? Would a policymaker see options they could actually
+  pull, even if the choices are hard?
+- Does the scenario avoid the trap of making government look
+  either omniscient or helpless? The best scenarios show
+  institutions trying, partially succeeding, and running into
+  genuine limits.
+
+### The Storyteller
+
+*Cares about: whether the narrative compels.*
+
+- Is there a clear arc? Does something change between the first
+  paragraph and the last — not just chronologically, but in the
+  reader's understanding of what's at stake?
+- Does the scenario have a turn — a moment where the world shifts,
+  or a comfortable assumption breaks? Without one, it reads as
+  description, not story.
+- Is the ending earned? Does the closing tension follow from
+  everything before it, or does it arrive out of nowhere?
+- Is there texture — a vivid detail, a wry observation, a
+  compressed phrase that sticks — or does it read like a briefing
+  note?
+- Does the scenario sustain one governing idea, or does it try to
+  say everything and end up saying nothing?
+
+---
+
 <!-- ADD NEW STRESS-TEST QUESTIONS BELOW as patterns emerge from
 workshop experience -->
