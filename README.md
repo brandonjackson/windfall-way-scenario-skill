@@ -1,0 +1,63 @@
+# Windfall Way Scenario Skills
+
+Co-authoring narrative scenarios for policy workshops on AI and economic
+change. Four skills that share one library of frameworks, house style,
+stress tests, templates, and a corpus of past scenarios.
+
+## The skills
+
+| Skill | Covers | Use when |
+|---|---|---|
+| **scenario-generation** | The whole pipeline, one pass | "Write me a scenario for the DSIT workshop" |
+| **scenario-concepting** | Intake, brief, five ranked concepts | Working out what the scenario should be about |
+| **scenario-drafting** | Draft, stress-test loop, tune | Turning a chosen concept into finished prose |
+| **scenario-stress-testing** | Judges, categories, workshop simulation | Pressure-testing a draft before it meets a room |
+
+They compose: `scenario-generation` runs concepting, then selection, then
+drafting; `scenario-drafting` runs `scenario-stress-testing` as its
+revision loop. When the orchestrator invokes them, the stage skills run in
+**one-shot mode** — no clarifying questions, no stopping for approval,
+every artifact still produced in full.
+
+```
+  intake ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
+                (brief + concepts)     (top rank)     │         ▲
+                                                      ▼         │
+                                            scenario-stress-testing
+                                                 (iterate ×2–3)
+```
+
+Each also stands alone: run concepting to explore a possibility space, or
+stress testing against a draft written elsewhere.
+
+## Layout
+
+```
+skills/
+  scenario-generation/SKILL.md     orchestrator
+  scenario-concepting/SKILL.md     stages 1–3
+  scenario-drafting/SKILL.md       stages 5–6
+  scenario-stress-testing/SKILL.md stages 6a–6b
+references/                        shared library — edit these as practice develops
+  scenario-frameworks.md           frameworks and recurring patterns
+  workshop-types.md                workshop formats
+  house-style.md                   voice, structure, anti-patterns
+  stress-tests.md                  question set and the four judges
+templates/                         BRIEF.md, CONCEPT.md, SCENARIO.md
+scenarios/                         the corpus, for calibration
+```
+
+`references/`, `templates/`, and `scenarios/` sit at the plugin root and
+are shared by all four skills — there is one copy of the house style, not
+four. Extend them rather than the skills themselves where the change is
+about practice rather than process.
+
+## Artifacts a full run produces
+
+`BRIEF.md`, `CONCEPT-A.md` … `CONCEPT-E.md`, `SCENARIO-RAW.md`,
+`STRESS-TEST-1.md` (and further rounds), `SCENARIO-FINAL.md` — written to
+the working directory in a single flat folder.
+
+## Distribution
+
+`scripts/make-zip.sh` packages the plugin. See `scripts/README.md`.

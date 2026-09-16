@@ -1,7 +1,7 @@
 # Scenario Frameworks
 
 A maintained library of structural frameworks used to map the possibility
-space during concepting. Each framework defines axes or dimensions and
+space during concepting (see the `scenario-concepting` skill). Each framework defines axes or dimensions and
 the positions they generate. Frameworks provide the scaffolding; the
 creative work is filling a position with a vivid, causally coherent world.
 

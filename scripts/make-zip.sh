@@ -39,11 +39,15 @@ rm -f "$output"
 parent_dir="$(dirname "$root_dir")"
 cd "$parent_dir"
 
-# Exclude anything whose name starts with a period, at any depth (.git,
-# .github, .gitignore, .DS_Store, …) — dotfiles rarely belong in a
-# distributable — plus other build cruft.
+# Exclude version-control and OS cruft, plus build leftovers. The
+# .claude-plugin directory is deliberately kept: the archive is a plugin
+# bundle (four skills under skills/ plus the shared references, templates
+# and scenarios), so it needs its manifest to be installable.
 zip -r -q "$output" "$skill_name" \
-  -x "*/.*" \
+  -x "*/.git/*" \
+  -x "*/.github/*" \
+  -x "*/.gitignore" \
+  -x "*/.DS_Store" \
   -x "*/__pycache__/*" \
   -x "*.pyc" \
   -x "*.zip"

@@ -58,7 +58,7 @@ bind in under 20 words. -->
 
 ---
 
-## Tuning Notes (added in Stage 6)
+## Tuning Notes (added during tuning)
 
 ### Assumptions Made for Conversation
 
