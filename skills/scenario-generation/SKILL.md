@@ -43,9 +43,14 @@ directory.
 
 Read at the start of a run, when framing intake:
 
-- `references/scenario-frameworks.md` — structural frameworks and
-  recurring scenario patterns
-- `references/workshop-types.md` — workshop formats
+- `references/workshop-types.md` — workshop formats, so intake can offer
+  the options rather than ask an open question
+
+The framework library is **scenario-concepting's**, not this skill's. Ask
+whether a framework is in play, pass through whatever the user names, and
+leave the rest to concepting — it holds
+`references/scenario-frameworks.md` and will choose and record an
+assumption when intake comes back blank.
 
 Resolve every path in this section against **this file's own directory**,
 not the user's working directory — the two are different places. If you
@@ -111,8 +116,9 @@ Cover:
 - **AI capability assumptions**: what can AI do in this world? Use
   augmentation / substitution / full automation as scaffolding, capture
   specifics in free text.
-- **Scenario framework**: is one structuring the possibility space? See
-  `scenario-frameworks.md`.
+- **Scenario framework**: is one structuring the possibility space? Take
+  what the user names — don't offer a menu or pick one here. Concepting
+  chooses from its own framework library if this comes back blank.
 - **Geographic and political setting**: where and when?
 - **Thematic focus**: which economic, technological, or social dynamics
   matter most?
