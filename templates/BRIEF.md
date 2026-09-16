@@ -112,11 +112,30 @@ cultures shape what's possible? -->
 
 ---
 
-## Concepts (added after Stage 3)
+## Assumptions
+
+<!-- Every gap that was filled rather than asked about, one sentence each,
+so they can be overturned at a glance. -->
+
+---
+
+## Concepts (added during concepting)
 
 <!-- Ranked list of concept summaries with one-sentence justifications.
-Populated during the concepting stage. -->
+Populated during the concepting stage. All concepts are ranked — no
+partial tables. -->
 
 | Rank | Concept | Summary | Why this ranking |
 |------|---------|---------|------------------|
 |      |         |         |                  |
+
+### Spread check
+
+<!-- The central mechanism of each concept, and a line confirming the
+anti-clustering rules hold: five distinct mechanisms, three or more
+framework positions, one uncomfortable concept, one undramatic concept,
+varied binds. -->
+
+### Selected concept
+
+<!-- Which concept goes to drafting, and one sentence on why. -->

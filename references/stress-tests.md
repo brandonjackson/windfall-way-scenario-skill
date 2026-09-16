@@ -1,8 +1,10 @@
 # Scenario Stress Tests
 
 Structured questions to apply to a draft scenario before tuning.
-Work through these after drafting (Stage 5) and use the results to
-inform the tuning pass (Stage 6).
+Used by the `scenario-stress-testing` skill, which works through the
+categories, then the judges, then simulates the workshop conversation,
+and records severity-ranked findings that `scenario-drafting` revises
+against.
 
 ---
 

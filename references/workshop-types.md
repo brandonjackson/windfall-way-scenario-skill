@@ -1,6 +1,6 @@
 # Workshop Types
 
-<!-- This is a maintained list of workshop formats the skill can reference
+<!-- This is a maintained list of workshop formats the skills can reference
 when helping define the gathering. Expand and refine as you run more workshops.
 
 Below is a starter set based on your existing work — edit, rename, or gut
