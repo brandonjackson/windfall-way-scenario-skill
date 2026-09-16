@@ -45,12 +45,32 @@ references/                        shared library — edit these as practice dev
   stress-tests.md                  question set and the four judges
 templates/                         BRIEF.md, CONCEPT.md, SCENARIO.md
 scenarios/                         the corpus, for calibration
+scripts/sync-bundled.sh            copies the library into each skill
 ```
 
-`references/`, `templates/`, and `scenarios/` sit at the plugin root and
-are shared by all four skills — there is one copy of the house style, not
-four. Extend them rather than the skills themselves where the change is
-about practice rather than process.
+`references/`, `templates/`, and `scenarios/` at the repo root are the
+**single source of truth**. Edit those as practice develops — extend them
+rather than the skills themselves where the change is about practice
+rather than process.
+
+Each skill then carries its own copy of exactly the files it reads, at
+`skills/<skill>/references/…`, `…/templates/…`, `…/scenarios/…`. The
+duplication is deliberate: a skill only travels reliably with the files
+inside its own directory, and a skill that is synced or packaged on its
+own leaves anything beside `skills/` behind. A skill that cannot find a
+bundled file stops and says so rather than improvising from memory.
+
+After editing anything under `references/`, `templates/`, or `scenarios/`,
+run:
+
+```
+scripts/sync-bundled.sh
+```
+
+and commit the copies it updates. `scripts/sync-bundled.sh --check` fails
+if they have drifted; CI runs it on every push. Which files each skill
+gets is the manifest at the top of that script — keep it in step with the
+**Bundled resources** section of each `SKILL.md`.
 
 ## Artifacts a full run produces
 

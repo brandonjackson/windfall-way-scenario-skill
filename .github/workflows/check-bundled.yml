@@ -1,0 +1,13 @@
+name: Check bundled skill resources
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bundled copies match the root library
+        run: scripts/sync-bundled.sh --check

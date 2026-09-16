@@ -23,13 +23,11 @@ leaves them for `scenario-drafting` (or the user) to apply. Keeping
 diagnosis separate from revision is the point: a critic who is also the
 author grades gently.
 
-## Shared resources
+## Bundled resources
 
-All four scenario skills share one library, at the plugin root — the
-directory containing `references/`, `templates/`, and `scenarios/`. From
-this skill's own directory that is two levels up
-(`../../references/stress-tests.md`); in a plugin install it is
-`${CLAUDE_PLUGIN_ROOT}/references/stress-tests.md`.
+This skill carries its own copy of everything it reads, inside this skill
+directory, beside this file. Nothing it needs lives outside that
+directory.
 
 Read before starting:
 
@@ -37,8 +35,20 @@ Read before starting:
 - `BRIEF.md` from the project, if one exists — most findings are only
   judgeable against the intended audience and workshop format
 
+Resolve every path in this section against **this file's own directory**,
+not the user's working directory — the two are different places. If you
+do not already know this file's directory, find it: locate the path
+ending in `skills/scenario-stress-testing/SKILL.md` and work from there.
+
+**A missing resource is a hard stop.** Never reconstruct a framework,
+template, house style or corpus from memory and carry on — the output
+would quietly diverge from the library, and the user would have no way
+to see it. Say which file is missing and where you looked, and ask how
+to proceed. This holds in one-shot mode as well: a missing library is
+exactly the genuine blocker that mode allows you to come back on.
+
 Project artifacts go in the user's working directory. Never write project
-files into the skill or plugin directory.
+files into the skill directory.
 
 ## When invoked in one-shot mode
 

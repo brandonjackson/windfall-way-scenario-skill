@@ -23,14 +23,11 @@ The failure mode this skill exists to prevent is five concepts that are
 secretly the same concept. Explore wide before you narrow, and prove the
 spread rather than asserting it.
 
-## Shared resources
+## Bundled resources
 
-All four scenario skills share one library, at the plugin root — the
-directory containing `references/`, `templates/`, and `scenarios/`. From
-this skill's own directory that is two levels up
-(`../../references/scenario-frameworks.md`); in a plugin install it is
-`${CLAUDE_PLUGIN_ROOT}/references/scenario-frameworks.md`. Locate it once
-and use short names from then on.
+This skill carries its own copy of everything it reads, inside this skill
+directory, beside this file. Nothing it needs lives outside that
+directory.
 
 Read before starting:
 
@@ -39,8 +36,20 @@ Read before starting:
 - `references/workshop-types.md` — workshop formats
 - `templates/BRIEF.md` and `templates/CONCEPT.md` — the output shapes
 
+Resolve every path in this section against **this file's own directory**,
+not the user's working directory — the two are different places. If you
+do not already know this file's directory, find it: locate the path
+ending in `skills/scenario-concepting/SKILL.md` and work from there.
+
+**A missing resource is a hard stop.** Never reconstruct a framework,
+template, house style or corpus from memory and carry on — the output
+would quietly diverge from the library, and the user would have no way
+to see it. Say which file is missing and where you looked, and ask how
+to proceed. This holds in one-shot mode as well: a missing library is
+exactly the genuine blocker that mode allows you to come back on.
+
 Project artifacts go in the user's working directory, in a single flat
-folder. Never write project files into the skill or plugin directory.
+folder. Never write project files into the skill directory.
 
 ## When invoked in one-shot mode
 

@@ -23,13 +23,11 @@ Drafting is not a single pass. The shape is **draft → stress test →
 revise → re-test → finesse → document**, and the loop in the middle is
 where most of the quality comes from.
 
-## Shared resources
+## Bundled resources
 
-All four scenario skills share one library, at the plugin root — the
-directory containing `references/`, `templates/`, and `scenarios/`. From
-this skill's own directory that is two levels up
-(`../../references/house-style.md`); in a plugin install it is
-`${CLAUDE_PLUGIN_ROOT}/references/house-style.md`.
+This skill carries its own copy of everything it reads, inside this skill
+directory, beside this file. Nothing it needs lives outside that
+directory, the scenario corpus included.
 
 Read before drafting, every time — not from memory:
 
@@ -40,8 +38,20 @@ Read before drafting, every time — not from memory:
   brief's horizon and audience. Calibration comes from the corpus, not
   from the style guide alone.
 
+Resolve every path in this section against **this file's own directory**,
+not the user's working directory — the two are different places. If you
+do not already know this file's directory, find it: locate the path
+ending in `skills/scenario-drafting/SKILL.md` and work from there.
+
+**A missing resource is a hard stop.** Never reconstruct a framework,
+template, house style or corpus from memory and carry on — the output
+would quietly diverge from the library, and the user would have no way
+to see it. Say which file is missing and where you looked, and ask how
+to proceed. This holds in one-shot mode as well: a missing library is
+exactly the genuine blocker that mode allows you to come back on.
+
 Project artifacts go in the user's working directory, in a single flat
-folder. Never write project files into the skill or plugin directory.
+folder. Never write project files into the skill directory.
 
 ## When invoked in one-shot mode
 
