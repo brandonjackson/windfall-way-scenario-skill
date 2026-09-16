@@ -11,12 +11,19 @@
       "displayName": "Windfall Way Scenario Writing",
       "description": "End-to-end co-authoring of narrative scenarios for policy workshops on AI and economic change. Walks through a structured pipeline: intake, goal definition, concepting, selection, drafting, and tuning to produce workshop-ready scenario narratives.",
       "version": "1.0.0",
-      "source": ".",
+      "source": "./",
       "author": {
         "name": "Brandon Jackson"
       },
       "category": "productivity",
-      "keywords": ["scenario-writing", "policy", "workshops", "futures", "foresight", "AI"]
+      "keywords": [
+        "scenario-writing",
+        "policy",
+        "workshops",
+        "futures",
+        "foresight",
+        "AI"
+      ]
     }
   ]
 }
