@@ -1,0 +1,22 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "windfall-way-scenario-skill",
+  "description": "Scenario writing skills for AI policy workshops on AI and economic change",
+  "owner": {
+    "name": "Brandon Jackson"
+  },
+  "plugins": [
+    {
+      "name": "windfall-way-scenario-skill",
+      "displayName": "Windfall Way Scenario Writing",
+      "description": "End-to-end co-authoring of narrative scenarios for policy workshops on AI and economic change. Walks through a structured pipeline: intake, goal definition, concepting, selection, drafting, and tuning to produce workshop-ready scenario narratives.",
+      "version": "1.0.0",
+      "source": ".",
+      "author": {
+        "name": "Brandon Jackson"
+      },
+      "category": "productivity",
+      "keywords": ["scenario-writing", "policy", "workshops", "futures", "foresight", "AI"]
+    }
+  ]
+}
