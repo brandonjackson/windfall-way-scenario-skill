@@ -7,6 +7,15 @@
     "name": "Brandon Jackson"
   },
   "repository": "https://github.com/brandonjackson/windfall-way-scenario-skill",
-  "keywords": ["scenario-writing", "policy", "workshops", "futures", "foresight", "AI"],
-  "category": "productivity"
+  "keywords": [
+    "scenario-writing",
+    "policy",
+    "workshops",
+    "futures",
+    "foresight",
+    "AI"
+  ],
+  "skills": [
+    "./"
+  ]
 }
