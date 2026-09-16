@@ -35,17 +35,40 @@ complete set of artifacts at the end.
 Use the stage skills directly when the user wants to work a single stage.
 Use this skill when they want the finished scenario.
 
-## Shared resources
+## Bundled resources
 
-All four scenario skills share one library, at the plugin root — the
-directory containing `references/`, `templates/`, and `scenarios/`. From
-this skill's own directory that is two levels up
-(`../../references/house-style.md`); in a plugin install it is
-`${CLAUDE_PLUGIN_ROOT}/references/house-style.md`. Locate it once at the
-start of a run and use short names from then on.
+This skill carries its own copy of everything it reads, inside this skill
+directory, beside this file. Nothing it needs lives outside that
+directory.
 
-Project artifacts are written to the user's working directory, in a single
-flat folder. Never write project files into the skill or plugin directory.
+Read at the start of a run, when framing intake:
+
+- `references/workshop-types.md` — workshop formats, so intake can offer
+  the options rather than ask an open question
+
+The framework library is **scenario-concepting's**, not this skill's. Ask
+whether a framework is in play, pass through whatever the user names, and
+leave the rest to concepting — it holds
+`references/scenario-frameworks.md` and will choose and record an
+assumption when intake comes back blank.
+
+Resolve every path in this section against **this file's own directory**,
+not the user's working directory — the two are different places. If you
+do not already know this file's directory, find it: locate the path
+ending in `skills/scenario-generation/SKILL.md` and work from there.
+
+**A missing resource is a hard stop.** Never reconstruct a framework,
+template, house style or corpus from memory and carry on — the output
+would quietly diverge from the library, and the user would have no way
+to see it. Say which file is missing and where you looked, and ask how
+to proceed. This holds in one-shot mode as well: a missing library is
+exactly the genuine blocker that mode allows you to come back on.
+
+Each stage skill carries its own copy of what *it* reads, so pass it the
+brief and the concepts, never file paths into this directory.
+
+Project artifacts go in the user's working directory, in a single flat
+folder. Never write project files into the skill directory.
 
 ## One-shot mode
 
@@ -93,8 +116,9 @@ Cover:
 - **AI capability assumptions**: what can AI do in this world? Use
   augmentation / substitution / full automation as scaffolding, capture
   specifics in free text.
-- **Scenario framework**: is one structuring the possibility space? See
-  `scenario-frameworks.md`.
+- **Scenario framework**: is one structuring the possibility space? Take
+  what the user names — don't offer a menu or pick one here. Concepting
+  chooses from its own framework library if this comes back blank.
 - **Geographic and political setting**: where and when?
 - **Thematic focus**: which economic, technological, or social dynamics
   matter most?
