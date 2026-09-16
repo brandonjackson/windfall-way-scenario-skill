@@ -58,6 +58,12 @@ about practice rather than process.
 `STRESS-TEST-1.md` (and further rounds), `SCENARIO-FINAL.md` — written to
 the working directory in a single flat folder.
 
-## Distribution
+## Installing
 
-`scripts/make-zip.sh` packages the plugin. See `scripts/README.md`.
+Add the repository as a plugin marketplace in Claude Code, then install
+the `windfall-way-scenario-skill` plugin — all four skills come with it.
+
+```
+/plugin marketplace add brandonjackson/windfall-way-scenario-skill
+/plugin install windfall-way-scenario-skill
+```
