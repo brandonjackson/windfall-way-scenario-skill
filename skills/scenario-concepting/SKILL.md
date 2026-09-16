@@ -318,53 +318,42 @@ Concepts are spatial — they live in a possibility space — and a wall of
 prose hides whether you actually covered it. Every presentation of
 concepting work carries at least one visual.
 
-Default to markdown and ASCII that render in a terminal. Where the surface
-supports rich output, offer (one line, don't insist) a one-page visual
-summary as an artifact. Never let a visual replace the prose; it sits
+**Visuals are rendered charts, not text.** Draw them as real graphics — an
+HTML artifact with inline SVG or a charting library, or a plotted image
+file — never as ASCII art, box-drawing characters, arrow chains made of
+dashes, or any other picture built out of monospaced text. If the surface
+can't render a chart, say so in one line and give the content as prose or
+a plain markdown table instead of falling back to drawn-in-text diagrams.
+Markdown tables are fine as tables; they are not a substitute for the map.
+Read the `dataviz` skill before writing any chart code, and follow its
+palette and labelling rules. Never let a visual replace the prose; it sits
 above it as the map.
 
-**When presenting the brief (Stage 2):** a parameters-at-a-glance table —
-horizon, framework and position, timeline, audience, and the three
+**When presenting the brief (Stage 2):** a parameters-at-a-glance
+table — horizon, framework and position, timeline, audience, and the three
 boundary lists side by side.
 
-**When presenting the pool (Stage 3a):** a coverage map showing where the
-premises land, so empty space is visible.
-
-```
-                    GAINS CONCENTRATED          GAINS SHARED
-                ┌───────────────────────┬───────────────────────┐
-  FAST          │ Hollow Boom           │ Broad-Based Boom      │
-  DIFFUSION     │ ●●●●● (5 premises)    │ ● (1)                 │
-                │ over-fished           │ ← thin, generate more │
-                ├───────────────────────┼───────────────────────┤
-  SLOW          │ Unequal Drift         │ Managed Transition    │
-  DIFFUSION     │ ●●● (3)               │ ●●●● (4)              │
-                └───────────────────────┴───────────────────────┘
-```
+**When presenting the pool (Stage 3a):** a coverage map as a scatter or
+binned-grid chart — the framework's two axes, each premise a plotted mark,
+counts per cell shown — so empty space is visible at a glance. Annotate
+over-fished and thin cells on the chart itself.
 
 **When presenting the five concepts (Stage 3f):** all three of —
 
-1. **The map**: the same grid, with the five plotted by name.
+1. **The map**: the same plotted chart, with the five labelled by name.
 2. **The comparison table**: concepts as columns, dimensions as rows —
    central mechanism, who wins, who loses, the bind it lands on, the
-   likeliest objection. This is the visual that exposes clustering.
-3. **The causal spine** of each concept as a compressed arrow chain,
-   three to five links:
+   likeliest objection. This is the visual that exposes clustering. A
+   markdown table is the right form here.
+3. **The causal spine** of each concept as a node-and-edge diagram of
+   three to five links, drawn in SVG — each step a labelled node, each
+   link a drawn arrow. For example: *audit automation → compliance costs
+   collapse → mid-tier firms undercut incumbents → professional bodies
+   lose licensing leverage → the state loses its enforcement proxy.*
 
-   ```
-   A: audit automation ─► compliance costs collapse ─► mid-tier
-      firms undercut incumbents ─► professional bodies lose
-      licensing leverage ─► the state loses its enforcement proxy
-   ```
+Where a concept turns on timing, add a timeline chart: a drawn axis with
+the milestone years marked and each event labelled against its point.
 
-Where a concept turns on timing, add a timeline strip:
-
-```
-  2026 ──── 2028 ──────── 2030 ──────────── 2032
-   │          │             │                 │
-   pilot    threshold    fiscal gap      the decision
-            crossed      opens           deferred again
-```
-
-Keep visuals narrow enough for a terminal (roughly 76 characters), label
-axes, and put the caveat in the prose rather than the picture.
+Label every axis, title every chart, make it legible at the width it will
+be viewed at and in both light and dark themes, and put the caveat in the
+prose rather than the picture.
