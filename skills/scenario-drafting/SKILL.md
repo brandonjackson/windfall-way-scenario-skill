@@ -1,7 +1,7 @@
 ---
 name: scenario-drafting
 description: >
-  Stage 2 of the Windfall Scenario Pipeline: turn a chosen concept into 
+  Stage 2 of the Windfall Scenarios pipeline: turn a chosen concept into 
   finished narrative prose, then stress test and tune it. Pick this to write 
   a scenario from a concept or revise an existing draft.
 ---
