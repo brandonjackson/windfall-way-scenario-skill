@@ -1,8 +1,9 @@
 ---
 name: scenario-concepting
 description: >
-  The front half of the scenario pipeline: intake, goal definition, and
-  concept generation for policy workshops on AI and economic change.
+  The front half of the scenario pipeline: information gathering, goal
+  definition, and concept generation for policy workshops on AI and
+  economic change.
   Produces a scenario brief and five fully worked, ranked concepts —
   candidate worlds with their causal models — ready for drafting. Use when
   the user wants to write a scenario brief, define a workshop's goals,
@@ -16,9 +17,9 @@ description: >
 
 # Scenario Concepting
 
-The front half of the scenario pipeline — intake, brief, concepting: work
-out what the scenario is *for*, then find the world that serves it. The
-creative core of the process.
+The front half of the scenario pipeline — information gathering, brief,
+concepting: work out what the scenario is *for*, then find the world that
+serves it. The creative core of the process.
 
 The failure mode this skill exists to prevent is five concepts that are
 secretly the same concept. Explore wide before you narrow, and prove the
@@ -54,10 +55,11 @@ folder. Never write project files into the skill directory.
 
 ## When invoked in one-shot mode
 
-`scenario-generation` will tell you it is running the full pipeline, and
-one of two things about intake: either it hands you the user's answers or
-an existing brief, in which case skip **Intake** entirely; or it asks you
-to run intake first, in which case ask the questions once, as a single
+`scenario-generation` will tell you it is running the full pipeline in
+one-shot mode, and one of two things about information gathering: either
+it hands you the user's answers or an existing brief, in which case skip
+**Information gathering** entirely; or it asks you to run information
+gathering first, in which case ask the questions once, as a single
 batch, and take whatever comes back. Either way, from the brief onward:
 skip the discussion and carry on. No clarifying questions, no presenting
 the brief for approval, no pausing between the brief and concepting.
@@ -66,11 +68,15 @@ under **Assumptions** in `BRIEF.md`. Explore no less widely and produce
 every artifact in full — one-shot mode compresses the conversation, never
 the output.
 
+If `scenario-generation` says instead that the user wants to approve
+every stage, none of this applies: run exactly as you would when invoked
+directly, stops and visuals included.
+
 ---
 
-## Intake
+## Information gathering
 
-This skill owns intake for the whole pipeline. `scenario-generation` asks
+This skill owns information gathering for the whole pipeline. `scenario-generation` asks
 no questions of its own; it sends the user here. Gather context through
 the structured questions below. Don't assume — ask.
 
@@ -79,7 +85,7 @@ assumed and flagged in `BRIEF.md`. Don't iterate on the answers: you need
 enough to write a brief, not perfect answers.
 
 If the user has already supplied a brief, or filled-in answers to these
-questions, skip intake and go straight to the brief.
+questions, skip this section and go straight to the brief.
 
 ### Goals of the gathering
 

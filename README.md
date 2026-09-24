@@ -8,29 +8,32 @@ stress tests, templates, and a corpus of past scenarios.
 
 | Skill | Covers | Use when |
 |---|---|---|
-| **scenario-generation** | The whole pipeline, one pass | "Write me a scenario for the DSIT workshop" |
-| **scenario-concepting** | Intake, brief, five ranked concepts | Working out what the scenario should be about |
+| **scenario-generation** | The whole pipeline, one shot or stage by stage | "Write me a scenario for the DSIT workshop" |
+| **scenario-concepting** | Information gathering, brief, five ranked concepts | Working out what the scenario should be about |
 | **scenario-drafting** | Draft, stress-test loop, tune | Turning a chosen concept into finished prose |
 | **scenario-stress-testing** | Judges, categories, workshop simulation | Pressure-testing a draft before it meets a room |
 
-The pipeline has seven stages, named the same way everywhere: **intake,
-brief, concepting, selection, drafting, stress testing, tuning.**
+The pipeline has seven stages, named the same way everywhere:
+**information gathering, brief, concepting, selection, drafting, stress
+testing, tuning.**
 
 They compose: `scenario-generation` runs concepting, then selection, then
 drafting; `scenario-drafting` runs `scenario-stress-testing` as its
 revision loop, in a fresh subagent context so the critic never sees the
-author's reasoning. Intake belongs to `scenario-concepting`; the
-orchestrator asks no questions of its own. When the orchestrator invokes
-them, the stage skills run in **one-shot mode** — no clarifying
-questions, no stopping for approval, every artifact still produced in
-full.
+author's reasoning. Information gathering belongs to
+`scenario-concepting`; the orchestrator asks no questions of its own
+beyond one at the start: does the user want the scenario **in one shot**,
+to **approve at every stage**, or to **pick the concept** and otherwise
+leave it alone. In one shot, the stage skills run in **one-shot mode** —
+no clarifying questions, no stopping for approval, every artifact still
+produced in full.
 
 ```
-  intake ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
-                (brief + concepts)     (top rank)     │         ▲
-                                                      ▼         │
-                                            scenario-stress-testing
-                                                 (iterate ×2–3)
+  information ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
+   gathering        (brief + concepts)   (top rank or      │         ▲
+                                          user's pick)     ▼         │
+                                                 scenario-stress-testing
+                                                      (iterate ×2–3)
 ```
 
 Each also stands alone: run concepting to explore a possibility space, or
@@ -41,7 +44,7 @@ stress testing against a draft written elsewhere.
 ```
 skills/
   scenario-generation/SKILL.md     orchestrator: selection, delivery
-  scenario-concepting/SKILL.md     intake, brief, concepting
+  scenario-concepting/SKILL.md     information gathering, brief, concepting
   scenario-drafting/SKILL.md       drafting, tuning
   scenario-stress-testing/SKILL.md stress testing
 references/                        shared library — edit these as practice develops

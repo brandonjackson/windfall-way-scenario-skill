@@ -1,7 +1,7 @@
 {
   "name": "windfall-way-scenario-skill",
   "displayName": "Windfall Way Scenario Writing",
-  "description": "Co-authoring narrative scenarios for policy workshops on AI and economic change. Four skills: scenario-generation runs the whole pipeline in one pass; scenario-concepting produces the brief and candidate worlds; scenario-drafting writes and tunes the narrative; scenario-stress-testing pressure-tests a draft before it meets a room.",
+  "description": "Co-authoring narrative scenarios for policy workshops on AI and economic change. Four skills: scenario-generation runs the whole pipeline, in one shot or stage by stage; scenario-concepting produces the brief and candidate worlds; scenario-drafting writes and tunes the narrative; scenario-stress-testing pressure-tests a draft before it meets a room.",
   "version": "2.0.0",
   "author": {
     "name": "Brandon Jackson"

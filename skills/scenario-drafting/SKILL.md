@@ -109,6 +109,9 @@ Hold to these while drafting:
 Write the first draft in one go, then read it once against the house
 style's anti-patterns before saving. Save as `SCENARIO-RAW.md`.
 
+In interactive mode, present the raw draft and wait for the user before
+starting the stress-test loop; in one-shot mode, carry straight on.
+
 ---
 
 ## Tuning
