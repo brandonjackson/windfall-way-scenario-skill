@@ -92,13 +92,6 @@ Hold to these while drafting:
   default; continuous prose suits the shortest scenarios. Both carry the
   same skeleton — a cascading causal chain where each beat depends on
   the last.
-- **Policy off, social-contract altitude.** Unless `BRIEF.md` records an
-  override, no invented Act, programme or reform drives the story, and
-  government appears slow, reacting and constrained. The story is about
-  the deal between citizens, firms and the state; specific concerns
-  from the brief are vivid instances, a sentence or two each, not the
-  subject. If drafting pulls a concept toward a single instrument, lift
-  it back up rather than following it down.
 - **Never break frame.** No "in this scenario", no "imagine if", no
   hedging. Past tense, third person, a historian looking back from inside
   the timeframe.
@@ -250,14 +243,12 @@ Drafting is finished when:
 1. Every Blocking finding from the final round resolved, or named
    as unresolved in the handback?
 2. Frame intact — no "in this scenario", no hedging, no moralising?
-3. Policy off and pitched at the social contract (or an override
-   recorded in `BRIEF.md`)?
-4. Closing tension unresolved and quotable?
-5. Institutional references accurate and current for this audience?
-6. Word count inside the chosen range?
-7. Tuning notes populated from the stress tests' Keep list, not
+3. Closing tension unresolved and quotable?
+4. Institutional references accurate and current for this audience?
+5. Word count inside the chosen range?
+6. Tuning notes populated from the stress tests' Keep list, not
    invented?
-8. Revision log present in `SCENARIO-RAW.md`?
+7. Revision log present in `SCENARIO-RAW.md`?
 
 Hand back: the scenario in full, inline; the final verdict and how many
 rounds it took; and the one objection you deliberately left in, so the

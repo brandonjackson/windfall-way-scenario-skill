@@ -77,8 +77,8 @@ on who it bothers.
 
 ### Pass 1 — the categories
 
-Work through each in turn: **Policy Stance and Altitude**,
-**Internal Consistency**, **Audience Resonance**, **Plausibility**, **Productive Tension**, **Emotional
+Work through each in turn: **Internal Consistency**, **Audience
+Resonance**, **Plausibility**, **Productive Tension**, **Emotional
 Register**, **Coverage and Gaps**, **Workshop Dynamics**.
 
 Quote the scenario. A finding that doesn't cite the line it's about isn't
@@ -134,7 +134,7 @@ rewriting the whole scenario each round.
 
 | Severity | Meaning | Treatment |
 |---|---|---|
-| **Blocking** | Derails the workshop or discredits the scenario. A broken causal link, a wrong institutional fact, a resolved tension, a fatal implausibility, a policy-on causal chain or single-instrument story the brief did not ask for. | Must be fixed before use. |
+| **Blocking** | Derails the workshop or discredits the scenario. A broken causal link, a wrong institutional fact, a resolved tension, a fatal implausibility. | Must be fixed before use. |
 | **Material** | Costs the scenario a chunk of its effect: a weak landing, a flat emotional register, a foreseeable fixation, an audience mismatch. | Fix unless there's a reason not to. |
 | **Minor** | Wording, texture, a small imprecision. | Fix if it's free. |
 | **Keep** | A flaw that earns its place — a deliberate ambiguity, a simplification that buys a better conversation, a provocation that should stay provocative. | Do not fix. Record the reasoning; it belongs in the scenario's tuning notes. |
@@ -168,7 +168,6 @@ Structure:
 |---|----------|----------|---------|---------------|
 
 ## Category pass
-### Policy Stance and Altitude
 ### Internal Consistency
 … (one subsection per category, each citing the text)
 

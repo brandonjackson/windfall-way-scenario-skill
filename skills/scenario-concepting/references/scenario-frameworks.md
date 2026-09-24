@@ -10,15 +10,6 @@ or a single provocative premise. But frameworks help ensure concept
 generation covers genuinely different territory rather than clustering
 around one future.
 
-Axes and positions describe **forces**: how fast the economy adopts AI,
-who captures the gains, whether systems hold or break. They are never a
-government's policy choice. When a brief adapts an axis, keep it a force.
-"How fast the state adopts AI" or "whether the state builds, buys or
-outsources" turns the axis into a policy menu, and every concept then
-becomes a story about the policy chosen. If the commissioner's worry is
-that the state is slow, that belongs in **Fixed**, as a condition every
-concept inherits, not on an axis. See **Policy Off** in the house style.
-
 ---
 
 ## Dator's Four Futures

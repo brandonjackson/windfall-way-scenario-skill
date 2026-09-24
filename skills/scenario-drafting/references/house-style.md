@@ -12,54 +12,15 @@ hedging — the scenario presents its world as fact. There's no "might" or
 "could" — that tentativeness is left for the workshop discussion, not
 the text.
 
-## Policy Off
+## Policy Off, Social-Contract Altitude
 
-Windfall scenarios are **policy off** by default. The world moves because
-of technology, markets, firms, households and ordinary institutional
-inertia, not because a government designed a response. The policy
-response is what the workshop exists to produce, so a scenario that
-already contains one leaves the room grading someone else's homework
-instead of doing its own.
-
-In practice:
-
-- **No invented policy as the engine.** No named Act, registry, levy,
-  programme, waiver or reform drives the causal chain. If you took the
-  policy out and the story collapsed, the scenario is policy on.
-- **Government appears, but reacting and constrained.** It can be slow,
-  outpaced, stretched, divided, stalling or firefighting: "could not
-  afford to slow down", "faced a deadline and had to decide". Existing
-  rules and institutions already on the books today are fine as setting.
-- **End before the decision.** The closing bind is the choice the state
-  and society now face, not the aftermath of a choice already made.
-
-The corpus shows this: Crossing the Threshold, Open Frontier, Paper
-Prosperity and A Tale of Two Switzerlands all end with government facing
-the bind, not having answered it. (The Great Pushback, a Discipline
-scenario from another team, is the exception, and even there the change
-is a broad societal backlash, not one instrument.)
-
-Override only when the brief says explicitly that the commissioner wants
-a specific policy tested. Record that in `BRIEF.md`.
-
-## Altitude: the Social Contract
-
-Windfall scenarios sit at the level of the **social contract**: the
-implicit deal between citizens, workers, firms and the state about work,
-security, fairness, trust and who pays. They are not case studies of one
-sector, system or instrument.
-
-A useful test: can you state the scenario's shift as a change in *who
-owes what to whom*? "Work stops being the route to security", "the state
-loses its role as the guarantor of trust", "the young are asked to fund a
-settlement they were locked out of". If the one-line summary is instead
-about a mechanism (a registry, a credit model, a permit system, a tax
-rate), the altitude is too low.
-
-Specific issues the commissioner raises (a security fear, a sector, a
-technology) are **lenses and texture**, not the spine. Let them appear
-as vivid instances of the larger shift, one or two sentences each,
-never as the thing the whole story is about.
+Scenarios are **policy off**: the world is driven by technology, markets
+and behaviour, and government reacts rather than enacting a designed
+response. No invented Act, programme or reform drives the story; the
+policy response is what the room produces. They are pitched at the
+**social contract** — the deal between citizens, firms and the state —
+not at one system or instrument. Specific concerns in the brief are
+lenses, not the spine.
 
 ## Horizon and Register
 
@@ -230,9 +191,3 @@ read from studying your work — correct or expand. -->
 - Scenarios too long to read and absorb in a workshop setting
 - Scenarios that moralise rather than show
 - Breaking frame with "in this scenario" or "imagine if"
-- Policy-on scenarios: an invented Act, programme or reform drives the
-  story, and the room is handed a policy to grade rather than a bind to
-  resolve
-- Scenarios pitched too low: the story is about one system, sector or
-  instrument (a registry, a model update, a tax) rather than the social
-  contract it strains
