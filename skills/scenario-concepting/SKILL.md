@@ -44,6 +44,27 @@ exactly the genuine blocker that mode allows you to come back on.
 Project artifacts go in the user's working directory, in a single flat
 folder. Never write project files into the skill directory.
 
+## House defaults
+
+Two defaults hold for every brief and every concept unless the user says
+otherwise, in so many words. Both are set out under **Policy Off** and
+**Altitude** in the house style; they are restated here because
+concepting is where they get lost.
+
+- **Policy off.** Concepts are driven by technology, markets, firms and
+  households, with government slow, reacting and constrained. No concept
+  turns on an invented Act, programme, registry, levy or reform. The
+  policy response is what the room produces; a concept that already
+  contains one leaves the room nothing to do.
+- **Social-contract altitude.** Each concept is a shift in the implicit
+  deal between citizens, workers, firms and the state. The
+  commissioner's specific concerns (a security fear, a sector, a
+  technology) are lenses the concept passes through, not its spine.
+
+Override only when the user or commissioner explicitly asks for a
+specific policy to be tested, or for a narrow sector study. Record the
+override under **Fixed** in `BRIEF.md`.
+
 ## When invoked in one-shot mode
 
 `scenario-generation` will tell you it is running the full pipeline in
@@ -103,7 +124,8 @@ questions, skip this section and go straight to the brief.
 - **Thematic focus**: which economic, technological, or social dynamics
   matter most?
 - **Constraints**: anything off-limits, already decided, or politically
-  sensitive?
+  sensitive? Is there a specific policy the commissioner wants tested?
+  (If not, the scenario is policy off.)
 - **Existing materials**: prior scenarios, briefs, or research to build on?
 
 Move on once you have enough to write a brief. Flag gaps and make
@@ -143,6 +165,23 @@ This determines the degrees of freedom for concepting, so be precise:
 The **Open** list is the raw material for concepting. If it has fewer than
 three entries, the concepting space is too narrow — push back, or widen
 it and say you have.
+
+Translating the user's concerns into boundaries is where briefs most
+often go wrong. Three rules:
+
+- **A worry about the state is a condition, not a variable.** "Government
+  is slow" goes under **Fixed**: the state lags, in every concept. Never
+  turn it into an Open entry or an axis about *how* the state catches up
+  (building, buying, outsourcing, slowing down): that makes every
+  concept a story about a policy.
+- **Open entries are forces and outcomes**, never policy choices: who
+  captures the gains, where trust moves, what breaks first, who fills the
+  gap the state leaves.
+- **Concerns are lenses, not requirements on the mechanism.** Write "each
+  concept should touch on X, Y and Z" rather than "every concept must be
+  built from X, Y and Z". A list of specific concerns every concept must
+  engage pushes every concept down to the one mechanism that happens to
+  hit them all.
 
 ### Scene setting
 
@@ -188,7 +227,8 @@ premises from each, so the pool can't collapse into one house style:
 3. **Inversion**: take the audience's central assumption from the brief's
    scene setting and assume the opposite holds.
 4. **Break a bottleneck**: take a bottleneck listed in the brief and
-   assume AI dissolves it. What was that bottleneck quietly holding up?
+   assume AI dissolves it — through adoption, markets or behaviour, not
+   a government programme. What was that bottleneck quietly holding up?
 5. **Second-order**: pick an obvious first-order effect everyone already
    expects, grant it, and write about what it causes two steps later.
 6. **Shift the protagonist**: same world, but the pressure lands on a
@@ -206,7 +246,11 @@ Then check the pool for spread before culling:
   one idea wearing several hats — generate against the gaps.
 - Check the pool contains at least one world where things go *well* for
   someone, and at least one where the change is institutional rather than
-  technological.
+  technological. Institutional means institutions straining, being routed
+  around or losing their role, not a government enacting a reform.
+- Strike any premise whose engine is a deliberate policy, and any whose
+  one-line summary names a system or instrument rather than a shift in
+  who owes what to whom. Rewrite it one level up or drop it.
 
 Show the user the pool with a coverage visual (see below) before culling,
 unless you're in one-shot mode.
@@ -222,6 +266,11 @@ Cull to **exactly five** candidates that:
 Apply these anti-clustering rules, and state in `BRIEF.md` how the final
 five satisfy them:
 
+- **No concept may be driven by a deliberate policy** (policy off),
+  unless the brief records an explicit override.
+- **Every concept is pitched at the social contract.** State each one's
+  shift in one line as a change in who owes what to whom. If the line
+  names a system, sector or instrument instead, it is too low.
 - **No two concepts may share a central mechanism.** If two do, cut the
   weaker and promote from the pool.
 - **At least three distinct framework positions** must be represented,
@@ -306,7 +355,8 @@ same set of files in the same shape every time.
   one-sentence justification
 - Carries a short **Spread check** note under the table: the central
   mechanism of each of the five, and a line confirming the
-  anti-clustering rules hold
+  anti-clustering rules hold, plus each concept's social-contract shift
+  in one line
 
 **Before you finish, run this checklist explicitly:**
 
@@ -317,6 +367,11 @@ same set of files in the same shape every time.
 5. One uncomfortable concept, one undramatic concept?
 6. Word counts inside the ranges?
 7. Ranked table complete, with justifications and the spread check?
+8. Policy off: no concept driven by an invented Act, programme or reform
+   (unless the brief records an override)? No Open entry or axis framed
+   as a state policy choice?
+9. Altitude: each concept stated as a social-contract shift, with the
+   commissioner's concerns as lenses rather than the spine?
 
 Fix anything that fails before presenting. Don't report concepting as done
 with an item outstanding.

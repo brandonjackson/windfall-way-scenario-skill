@@ -3,7 +3,8 @@
 ## Summary
 
 <!-- The punchy top half. Should be self-contained and vivid. A reader should
-grasp the essence of this world in under 60 seconds. -->
+grasp the essence of this world in under 60 seconds. Open with the shift
+in the social contract (who owes what to whom), not a mechanism. -->
 
 ### Timeline
 
@@ -34,7 +35,9 @@ about technology, policy, markets, and social behaviour. -->
 ### Causal Chains
 
 <!-- How do the assumptions connect? What causes what? Where are the feedback
-loops, tipping points, and path dependencies? -->
+loops, tipping points, and path dependencies? The drivers are technology,
+markets and behaviour; government reacts, it does not engineer the
+outcome (policy off, unless the brief says otherwise). -->
 
 ### Weaknesses
 

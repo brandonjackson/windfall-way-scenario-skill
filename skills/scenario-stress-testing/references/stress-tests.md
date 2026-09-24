@@ -8,6 +8,25 @@ against.
 
 ---
 
+## Policy Stance and Altitude
+
+- Is the scenario policy off? Does any invented Act, programme, registry,
+  levy or reform drive the causal chain? Remove it in your head: does
+  the story still stand? If not, the scenario is policy on.
+- Does government appear only as it would absent a designed response:
+  slow, reacting, constrained, facing the choice?
+- Does the ending hand the room a decision still to be made, rather than
+  the fallout of one already taken?
+- Can the scenario's shift be stated as a change in the social contract
+  (who owes what to whom)? Or is it really a story about one system,
+  sector or instrument?
+- Are the commissioner's specific concerns present as instances of the
+  larger shift, or has one of them become the whole story?
+
+Unless `BRIEF.md` explicitly asks for a policy to be tested, a
+policy-driven causal chain or a single-instrument story is **Blocking**:
+it pre-empts the room's work.
+
 ## Internal Consistency
 
 - Map the key economic arguments in the scenario. Are they all
@@ -134,7 +153,9 @@ different depending on who it bothers.
   face, or is it a thought experiment with no policy surface?
 - Are the policy levers implied by the scenario real and
   recognisable? Would a policymaker see options they could actually
-  pull, even if the choices are hard?
+  pull, even if the choices are hard? Implied, not pulled: if the
+  scenario pulls the lever itself, the room is left grading a
+  policy rather than choosing one.
 - Does the scenario avoid the trap of making government look
   either omniscient or helpless? The best scenarios show
   institutions trying, partially succeeding, and running into

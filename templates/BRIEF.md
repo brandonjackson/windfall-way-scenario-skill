@@ -14,7 +14,10 @@
 ### Desired Outcome
 
 <!-- What should participants walk away with? Be specific about the type of
-conversation, decision, or shift in thinking we're aiming for. -->
+conversation, decision, or shift in thinking we're aiming for.
+
+If the room is meant to produce responses or intervention points, the
+scenario must not already contain them. -->
 
 ---
 
@@ -63,7 +66,11 @@ position(s) are being explored.
 e.g. "AI Diffusion × Distribution — exploring the Hollow Boom quadrant"
 e.g. "Dator's Four Futures — Discipline archetype"
 e.g. "No framework — single premise: what if the UK's largest employer
-adopted full automation in 2029?" -->
+adopted full automation in 2029?"
+
+Axes are forces (adoption, distribution, resilience), never a
+government's policy choice. Do not reread an axis as "how fast the state
+acts" or "which instrument the state picks". -->
 
 ### Timeline
 
@@ -81,7 +88,12 @@ not open for the scenario to vary. -->
 ### Open
 
 <!-- What dimensions should the scenario explore? These are the degrees
-of freedom for concepting. -->
+of freedom for concepting.
+
+List forces and outcomes (who gains, what breaks, where trust moves),
+never policy choices ("whether the state builds or buys"). Policy is
+off by default: the response is what the room produces. Record it under
+Fixed if the commissioner explicitly wants a specific policy tested. -->
 
 ### Out of Scope
 
