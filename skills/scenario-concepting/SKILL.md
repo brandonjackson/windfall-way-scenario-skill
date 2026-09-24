@@ -16,8 +16,9 @@ description: >
 
 # Scenario Concepting
 
-Stages 1–3 of the scenario pipeline: work out what the scenario is *for*,
-then find the world that serves it. The creative core of the process.
+The front half of the scenario pipeline — intake, brief, concepting: work
+out what the scenario is *for*, then find the world that serves it. The
+creative core of the process.
 
 The failure mode this skill exists to prevent is five concepts that are
 secretly the same concept. Explore wide before you narrow, and prove the
@@ -53,20 +54,32 @@ folder. Never write project files into the skill directory.
 
 ## When invoked in one-shot mode
 
-`scenario-generation` will tell you it is running the full pipeline. Then:
+`scenario-generation` will tell you it is running the full pipeline, and
+one of two things about intake: either it hands you the user's answers or
+an existing brief, in which case skip **Intake** entirely; or it asks you
+to run intake first, in which case ask the questions once, as a single
+batch, and take whatever comes back. Either way, from the brief onward:
 skip the discussion and carry on. No clarifying questions, no presenting
-the brief for approval, no pausing between 2 and 3. Where you would have
-asked, choose the defensible option and record it under **Assumptions** in
-`BRIEF.md`. Explore no less widely and produce every artifact in full —
-one-shot mode compresses the conversation, never the output.
+the brief for approval, no pausing between the brief and concepting.
+Where you would have asked, choose the defensible option and record it
+under **Assumptions** in `BRIEF.md`. Explore no less widely and produce
+every artifact in full — one-shot mode compresses the conversation, never
+the output.
 
 ---
 
-## Stage 1: Inputs
+## Intake
 
-Gather context through structured questions. Don't assume — ask. (In
-one-shot mode the orchestrator has already done this; take its answers and
-go straight to Stage 2.)
+This skill owns intake for the whole pipeline. `scenario-generation` asks
+no questions of its own; it sends the user here. Gather context through
+the structured questions below. Don't assume — ask.
+
+Ask them as one batch, and say plainly that anything left blank will be
+assumed and flagged in `BRIEF.md`. Don't iterate on the answers: you need
+enough to write a brief, not perfect answers.
+
+If the user has already supplied a brief, or filled-in answers to these
+questions, skip intake and go straight to the brief.
 
 ### Goals of the gathering
 
@@ -86,7 +99,9 @@ go straight to Stage 2.)
   augmentation / substitution / full automation as scaffolding, but
   capture specifics in free text.
 - **Scenario framework**: is a framework structuring the possibility
-  space? See `scenario-frameworks.md`.
+  space? Take what the user names — don't offer a menu. If this comes
+  back blank, choose from `scenario-frameworks.md` when you write the
+  brief, and record the choice under **Assumptions**.
 - **Geographic and political setting**: where and when is this set?
 - **Thematic focus**: which economic, technological, or social dynamics
   matter most?
@@ -94,24 +109,23 @@ go straight to Stage 2.)
   sensitive?
 - **Existing materials**: prior scenarios, briefs, or research to build on?
 
-Move on once you have enough to write a brief. You don't need perfect
-answers — flag gaps and make reasonable assumptions, noting them
-explicitly.
+Move on once you have enough to write a brief. Flag gaps and make
+reasonable assumptions, noting them explicitly.
 
 ---
 
-## Stage 2: Goal Definition
+## Brief
 
 Produce `BRIEF.md` from `templates/BRIEF.md`.
 
-### 2a. Defining the gathering
+### Defining the gathering
 
 Who are the participants and what do we hope they achieve? Be specific
 about the conversation we want to provoke — not "discuss AI" but the
 particular tensions, trade-offs, or decisions we want them to grapple
 with.
 
-### 2b. Key parameters
+### Key parameters
 
 These shape everything downstream, so set them explicitly:
 
@@ -121,7 +135,7 @@ These shape everything downstream, so set them explicitly:
 - **Scenario framework** (name it, and state which position(s) are in play)
 - **Timeline** (when the scenario is set, and the range of events covered)
 
-### 2c. Boundary setting
+### Boundary setting
 
 This determines the degrees of freedom for concepting, so be precise:
 
@@ -129,11 +143,11 @@ This determines the degrees of freedom for concepting, so be precise:
 - **Open**: what the scenario should explore and vary across concepts
 - **Out of scope**: what we're deliberately not touching
 
-The **Open** list is the raw material for Stage 3. If it has fewer than
+The **Open** list is the raw material for concepting. If it has fewer than
 three entries, the concepting space is too narrow — push back, or widen
 it and say you have.
 
-### 2d. Scene setting
+### Scene setting
 
 What's interesting about this setting and this group?
 
@@ -151,14 +165,14 @@ user could overturn at a glance.
 ### Output
 
 `BRIEF.md`, complete. In interactive mode, present it for review before
-Stage 3 — with the visual summary described under **Presenting with
+concepting — with the visual summary described under **Presenting with
 visualisations** below. In one-shot mode, carry straight on.
 
 ---
 
-## Stage 3: Concepting
+## Concepting
 
-### 3a. Diverge first — build a wide pool
+### Diverge first — build a wide pool
 
 **Do not start by writing five concepts.** Start by generating a pool of
 **at least fifteen** one-line premises. They are cheap; write them fast
@@ -200,7 +214,7 @@ Then check the pool for spread before culling:
 Show the user the pool with a coverage visual (see below) before culling,
 unless you're in one-shot mode.
 
-### 3b. Converge — cull to five
+### Converge — cull to five
 
 Cull to **exactly five** candidates that:
 
@@ -222,7 +236,7 @@ five satisfy them:
 - **Not all five may end in the same kind of bind** (fiscal, political,
   distributional, geopolitical). Vary what the room is handed.
 
-### 3c. Write the top halves
+### Write the top halves
 
 For each of the five, draft the **top half** of a `CONCEPT.md` using the
 template: a punchy summary covering timeline, economic world, and key
@@ -231,7 +245,7 @@ under sixty seconds.
 
 Save as `CONCEPT-A.md` through `CONCEPT-E.md`.
 
-### 3d. World building
+### World building
 
 For each concept, expand the **bottom half**: the assumptions and causal
 models underpinning it. Show your working — what has to be true for this
@@ -239,7 +253,7 @@ world to exist? What are the key causal chains, feedback loops, and
 tipping points? Where is it most vulnerable to a "that would never
 happen" objection, and is that vulnerability fatal or acceptable?
 
-### 3e. Refinement
+### Refinement
 
 Iterate on each concept until:
 
@@ -248,9 +262,9 @@ Iterate on each concept until:
 - The causal logic holds up to scrutiny
 - The concept is still distinct from its four siblings after the
   detail went in — worlds converge as they get specific, so re-check
-  the anti-clustering rules here, not just at 3b
+  the anti-clustering rules here, not just at the cull
 
-### 3f. Ranking
+### Ranking
 
 Once the concepts have stabilised, add the ranked table to `BRIEF.md`.
 All five are ranked, each with a one-sentence justification. Criteria:
@@ -329,16 +343,16 @@ Read the `dataviz` skill before writing any chart code, and follow its
 palette and labelling rules. Never let a visual replace the prose; it sits
 above it as the map.
 
-**When presenting the brief (Stage 2):** a parameters-at-a-glance
+**When presenting the brief:** a parameters-at-a-glance
 table — horizon, framework and position, timeline, audience, and the three
 boundary lists side by side.
 
-**When presenting the pool (Stage 3a):** a coverage map as a scatter or
+**When presenting the pool, before the cull:** a coverage map as a scatter or
 binned-grid chart — the framework's two axes, each premise a plotted mark,
 counts per cell shown — so empty space is visible at a glance. Annotate
 over-fished and thin cells on the chart itself.
 
-**When presenting the five concepts (Stage 3f):** all three of —
+**When presenting the five ranked concepts:** all three of —
 
 1. **The map**: the same plotted chart, with the five labelled by name.
 2. **The comparison table**: concepts as columns, dimensions as rows —

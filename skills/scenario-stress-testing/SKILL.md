@@ -15,8 +15,8 @@ description: >
 
 # Scenario Stress Testing
 
-Stage 6a and 6b of the pipeline. Takes a draft scenario and finds what
-will break in the room — before the room finds it.
+The stress-testing stage of the pipeline. Takes a draft scenario and
+finds what will break in the room — before the room finds it.
 
 This skill **diagnoses; it does not rewrite.** It proposes fixes but
 leaves them for `scenario-drafting` (or the user) to apply. Keeping
@@ -58,6 +58,14 @@ what to focus on, don't present findings for approval, don't ask whether
 to continue to the conversation simulation. Run both parts, write the
 findings file, and hand back a short summary — the caller iterates on it.
 
+When `scenario-drafting` calls you, you should be running in your own
+context: a subagent handed this file, the draft, the brief and the round
+number, and nothing else. That is deliberate. You are the critic, and the
+author's reasoning is not evidence. Read the files you were given from
+disk rather than taking the caller's summary of them, and if the author's
+working has reached you anyway, set it aside and judge the text on the
+page.
+
 ## Inputs
 
 - The draft scenario (usually `SCENARIO-RAW.md`, or the current revision)
@@ -70,7 +78,7 @@ resonance are weaker without it.
 
 ---
 
-## Part 1: Stress testing (6a)
+## Part 1: Stress testing
 
 Work `references/stress-tests.md` in full. Two passes, in this order —
 they overlap deliberately, because the same flaw looks different depending
@@ -100,7 +108,7 @@ not a contradiction to resolve.
 
 ---
 
-## Part 2: Conversation simulation (6b)
+## Part 2: Conversation simulation
 
 Now imagine actually running the workshop in `BRIEF.md` with this
 scenario, with these participants, in this format.

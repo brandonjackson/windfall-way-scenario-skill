@@ -13,11 +13,17 @@ stress tests, templates, and a corpus of past scenarios.
 | **scenario-drafting** | Draft, stress-test loop, tune | Turning a chosen concept into finished prose |
 | **scenario-stress-testing** | Judges, categories, workshop simulation | Pressure-testing a draft before it meets a room |
 
+The pipeline has seven stages, named the same way everywhere: **intake,
+brief, concepting, selection, drafting, stress testing, tuning.**
+
 They compose: `scenario-generation` runs concepting, then selection, then
 drafting; `scenario-drafting` runs `scenario-stress-testing` as its
-revision loop. When the orchestrator invokes them, the stage skills run in
-**one-shot mode** — no clarifying questions, no stopping for approval,
-every artifact still produced in full.
+revision loop, in a fresh subagent context so the critic never sees the
+author's reasoning. Intake belongs to `scenario-concepting`; the
+orchestrator asks no questions of its own. When the orchestrator invokes
+them, the stage skills run in **one-shot mode** — no clarifying
+questions, no stopping for approval, every artifact still produced in
+full.
 
 ```
   intake ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
@@ -34,10 +40,10 @@ stress testing against a draft written elsewhere.
 
 ```
 skills/
-  scenario-generation/SKILL.md     orchestrator
-  scenario-concepting/SKILL.md     stages 1–3
-  scenario-drafting/SKILL.md       stages 5–6
-  scenario-stress-testing/SKILL.md stages 6a–6b
+  scenario-generation/SKILL.md     orchestrator: selection, delivery
+  scenario-concepting/SKILL.md     intake, brief, concepting
+  scenario-drafting/SKILL.md       drafting, tuning
+  scenario-stress-testing/SKILL.md stress testing
 references/                        shared library — edit these as practice develops
   scenario-frameworks.md           frameworks and recurring patterns
   workshop-types.md                workshop formats
@@ -53,8 +59,9 @@ scripts/sync-bundled.sh            copies the library into each skill
 rather than the skills themselves where the change is about practice
 rather than process.
 
-Each skill then carries its own copy of exactly the files it reads, at
-`skills/<skill>/references/…`, `…/templates/…`, `…/scenarios/…`. The
+Each stage skill then carries its own copy of exactly the files it reads,
+at `skills/<skill>/references/…`, `…/templates/…`, `…/scenarios/…`
+(`scenario-generation` reads nothing of its own and bundles nothing). The
 duplication is deliberate: a skill only travels reliably with the files
 inside its own directory, and a skill that is synced or packaged on its
 own leaves anything beside `skills/` behind. A skill that cannot find a

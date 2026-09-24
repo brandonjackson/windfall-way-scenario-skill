@@ -19,9 +19,9 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 # Which shared files each skill actually reads. Keep in step with the
-# "Bundled resources" section of each SKILL.md.
+# "Bundled resources" section of each SKILL.md. A skill absent from the
+# manifest (scenario-generation, the orchestrator) bundles nothing.
 MANIFEST="
-scenario-generation|references/workshop-types.md
 scenario-concepting|references/scenario-frameworks.md references/workshop-types.md templates/BRIEF.md templates/CONCEPT.md
 scenario-drafting|references/house-style.md templates/SCENARIO.md scenarios/
 scenario-stress-testing|references/stress-tests.md

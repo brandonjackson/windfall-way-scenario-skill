@@ -16,8 +16,8 @@ description: >
 
 # Scenario Drafting
 
-Stages 5 and 6 of the pipeline: write the scenario, then tune it until it
-does its job in the room.
+The back half of the pipeline — drafting, stress testing, tuning: write
+the scenario, then tune it until it does its job in the room.
 
 Drafting is not a single pass. The shape is **draft → stress test →
 revise → re-test → finesse → document**, and the loop in the middle is
@@ -79,7 +79,7 @@ scenarios that collapse under the Economist judge.
 
 ---
 
-## Stage 5: Drafting
+## Drafting
 
 1. Read the house style and the corpus examples. Note what the examples
    do that the style guide doesn't say.
@@ -111,9 +111,9 @@ style's anti-patterns before saving. Save as `SCENARIO-RAW.md`.
 
 ---
 
-## Stage 6: Tuning
+## Tuning
 
-### 6a/6b — Stress testing
+### Stress testing
 
 Invoke **scenario-stress-testing** on `SCENARIO-RAW.md`, passing the
 brief and the round number, in one-shot mode. It runs the category
@@ -121,11 +121,34 @@ questions, the four judges, and the conversation simulation, and writes
 `STRESS-TEST-<n>.md` with severity-ranked findings, each with a concrete
 suggested fix.
 
-Do not stress-test your own draft inline instead of calling the skill.
-The separation is deliberate — it is what stops an author grading their
-own work gently.
+**Run it in a fresh context, not in this one.** Launch it as a subagent
+— the Agent tool in Claude Code, or whatever this surface offers for a
+task with its own context window — and give it only:
 
-### 6c — Revise against the findings
+- the path to the stress-testing skill's `SKILL.md`, which sits beside
+  this skill's directory at `../scenario-stress-testing/SKILL.md`
+  (resolved against this file's own location), with the instruction to
+  read it and follow it
+- the paths to the draft and to `BRIEF.md`, to read from disk
+- the round number, and the words "one-shot mode"
+
+Nothing else: not the concept's working, not your drafting reasoning,
+not the findings you expect it to make. The critic judges the text on
+the page. The draft's own revision log travels inside the file, and that
+is all the history it needs.
+
+The separation is the point. A critic who has watched the author reason
+grades the reasoning rather than the draft, and grades it gently. So
+never stress-test your own draft inline, and never run the skill in this
+context: a stress test whose findings you could predict before it ran is
+not a test.
+
+If the surface has no way to run a task in its own context, fall back to
+invoking the skill inline, and say so in the handback: that round was
+not independent, and the facilitator should weight its verdict
+accordingly.
+
+### Revise against the findings
 
 Work the findings table in severity order:
 
@@ -164,7 +187,7 @@ restatements of the same finding, or findings that contradict earlier
 fixes, the scenario is being sanded down. Stop, and say which round you
 consider the best version.
 
-### 6d — Finessing
+### Finessing
 
 Once the loop has settled, a final pass on wording only. Targeted
 adjustments that:
@@ -179,7 +202,7 @@ house style one last time: frame never broken, closing unresolved and
 quotable, every sentence earning its place, length still inside the range
 you picked.
 
-### 6e — Documenting the choices
+### Documenting the choices
 
 At the bottom of the final scenario, under the template's tuning-notes
 headings:

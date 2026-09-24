@@ -35,40 +35,30 @@ complete set of artifacts at the end.
 Use the stage skills directly when the user wants to work a single stage.
 Use this skill when they want the finished scenario.
 
-## Bundled resources
+## Resources
 
-This skill carries its own copy of everything it reads, inside this skill
-directory, beside this file. Nothing it needs lives outside that
-directory.
-
-Read at the start of a run, when framing intake:
-
-- `references/workshop-types.md` — workshop formats, so intake can offer
-  the options rather than ask an open question
-
-The framework library is **scenario-concepting's**, not this skill's. Ask
-whether a framework is in play, pass through whatever the user names, and
-leave the rest to concepting — it holds
-`references/scenario-frameworks.md` and will choose and record an
-assumption when intake comes back blank.
-
-Resolve every path in this section against **this file's own directory**,
-not the user's working directory — the two are different places. If you
-do not already know this file's directory, find it: locate the path
-ending in `skills/scenario-generation/SKILL.md` and work from there.
-
-**A missing resource is a hard stop.** Never reconstruct a framework,
-template, house style or corpus from memory and carry on — the output
-would quietly diverge from the library, and the user would have no way
-to see it. Say which file is missing and where you looked, and ask how
-to proceed. This holds in one-shot mode as well: a missing library is
-exactly the genuine blocker that mode allows you to come back on.
-
-Each stage skill carries its own copy of what *it* reads, so pass it the
-brief and the concepts, never file paths into this directory.
+This skill bundles nothing of its own. Every reference, template and
+corpus file belongs to the stage skill that reads it, and each stage
+skill carries its own copy. Intake questions, the workshop formats and
+the framework library are all **scenario-concepting's**. Pass the stage
+skills the brief and the concepts, never file paths into this directory.
 
 Project artifacts go in the user's working directory, in a single flat
 folder. Never write project files into the skill directory.
+
+## How the stage skills are invoked
+
+Concepting and drafting run in this context, so they can see everything
+gathered so far and can speak to the user where their instructions allow.
+Load each one the way this surface loads a skill — in Claude Code, the
+Skill tool, passing "one-shot mode" as its argument. If there is no such
+mechanism, read the skill's `SKILL.md` from beside this skill's directory
+(`../scenario-concepting/SKILL.md`, `../scenario-drafting/SKILL.md`,
+resolved against this file's own location) and follow it directly.
+
+Stress testing is different: drafting launches it as a subagent with a
+fresh context, so the critic never sees the author's reasoning. Drafting
+owns that loop; you never call stress testing yourself.
 
 ## One-shot mode
 
@@ -94,62 +84,29 @@ user can see where the run is, not a narration of each file.
 
 ---
 
-## Step 1: Intake
+## Intake and concepting
 
-One consolidated round of questions, asked once, before anything else.
-This is the only point in the run where you stop for the user.
+Invoke **scenario-concepting** once, and tell it two things: the full
+pipeline is running in one-shot mode, and how intake stands.
 
-Cover:
+- If the user has already supplied a brief, or answers to the intake
+  questions, pass those through and tell concepting to skip intake.
+- Otherwise tell concepting to run its intake first — one consolidated
+  batch of questions, asked once — and then carry on in one-shot mode.
 
-### Goals of the gathering
+The intake questions live in concepting, not here; do not ask a version
+of your own. That batch is the only point in the run where you stop for
+the user. Anything left blank becomes a stated assumption in `BRIEF.md`.
 
-- **Audience**: who is in the room? Roles, seniority, sector, expertise.
-- **Commissioning context**: who asked for this, and what's the broader
-  programme?
-- **Workshop format**: which kind of session? (see `workshop-types.md`)
-- **Desired outcome**: what should participants walk away with?
-
-### Scenario assumptions
-
-- **Horizon**: H1 (continuation), H2 (emerging change), or H3
-  (transformative)? This shapes the register of the whole piece.
-- **AI capability assumptions**: what can AI do in this world? Use
-  augmentation / substitution / full automation as scaffolding, capture
-  specifics in free text.
-- **Scenario framework**: is one structuring the possibility space? Take
-  what the user names — don't offer a menu or pick one here. Concepting
-  chooses from its own framework library if this comes back blank.
-- **Geographic and political setting**: where and when?
-- **Thematic focus**: which economic, technological, or social dynamics
-  matter most?
-- **Constraints**: anything off-limits, already decided, or politically
-  sensitive?
-- **Existing materials**: prior scenarios, briefs, or research to build on?
-
-Ask these as one batch, and say plainly that anything left blank will be
-assumed and flagged. Do not iterate on the answers — you need enough to
-write a brief, not perfect answers. Gaps become stated assumptions in
-`BRIEF.md`.
-
-If the user has already supplied a brief or a filled-in intake, skip this
-step entirely and go straight to Step 2.
-
----
-
-## Step 2: Concepting
-
-Invoke **scenario-concepting** in one-shot mode.
-
-It runs intake framing (already supplied — pass the answers through),
-goal definition, and concepting. Divergent exploration still happens in
-full; what's skipped is the pause for review.
+Concepting then writes the brief and runs concepting in full. Divergent
+exploration still happens; what's skipped is the pause for review.
 
 Expect back: `BRIEF.md` and `CONCEPT-A.md` … `CONCEPT-E.md`, with the
 ranked table populated in `BRIEF.md`.
 
 ---
 
-## Step 3: Selection
+## Selection
 
 In a one-shot run you make the call, without asking:
 
@@ -166,22 +123,22 @@ on; do not wait for a response.
 
 ---
 
-## Step 4: Drafting and tuning
+## Drafting and tuning
 
 Invoke **scenario-drafting** in one-shot mode, pointing it at `BRIEF.md`
 and the selected concept file.
 
-That skill drafts `SCENARIO-RAW.md`, then calls **scenario-stress-testing**
-and iterates against its findings before finessing and producing
-`SCENARIO-FINAL.md`. You do not need to call the stress-testing skill
-yourself — drafting owns that loop.
+That skill drafts `SCENARIO-RAW.md`, then runs **scenario-stress-testing**
+as a fresh-context subagent and iterates against its findings before
+finessing and producing `SCENARIO-FINAL.md`. You do not call the
+stress-testing skill yourself — drafting owns that loop.
 
 Expect back: `SCENARIO-RAW.md`, `STRESS-TEST-1.md` (and `-2`, `-3` if the
 loop ran further), and `SCENARIO-FINAL.md`.
 
 ---
 
-## Step 5: Deliver
+## Deliver
 
 Present the finished run in one message:
 
