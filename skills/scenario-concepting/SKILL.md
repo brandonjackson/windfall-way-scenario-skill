@@ -358,9 +358,33 @@ over-fished and thin cells on the chart itself.
    markdown table is the right form here.
 3. **The causal spine** of each concept as a node-and-edge diagram of
    three to five links, drawn in SVG — each step a labelled node, each
-   link a drawn arrow. For example: *audit automation → compliance costs
-   collapse → mid-tier firms undercut incumbents → professional bodies
-   lose licensing leverage → the state loses its enforcement proxy.*
+   link a drawn arrow. The spine must tell the story on its own: someone
+   who hasn't read the concept should be able to follow it left to right
+   and say what happens, to whom, and why it matters.
+
+   - **Each node is a short plain-English sentence of roughly 50
+     characters** (aim for 40–60) — who does what, or what changes. Not
+     a two- or three-word label: "Fee pools halve" or "Cautious rules"
+     is a headline, not a step, and a row of them is unreadable.
+   - **Name the actor and the direction.** Say who acts and what moves
+     which way ("UK firms resell US agents under their own brand", not
+     "Outcome products").
+   - **Each step must follow visibly from the one before.** Read the
+     row aloud joined by "so…"; if a link needs the concept file to make
+     sense, rewrite the node until it doesn't.
+   - **The last node is the consequence for the UK economy or state**,
+     stated concretely enough to be the concept's punchline.
+   - Wrap node text over two or three lines inside the box and size the
+     boxes to fit; stack the steps vertically if five wide boxes won't
+     fit the viewing width. Never shrink or truncate text to fit.
+
+   For example, not *audit automation → costs collapse → undercutting →
+   leverage lost*, but:
+
+   *AI agents automate most routine audit work → Compliance costs for
+   mid-tier firms fall by two-thirds → Mid-tier firms undercut the Big
+   Four on price → Professional bodies lose their grip on licensing →
+   The state loses its cheapest enforcement proxy.*
 
 Where a concept turns on timing, add a timeline chart: a drawn axis with
 the milestone years marked and each event labelled against its point.
