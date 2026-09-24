@@ -1,7 +1,7 @@
 ---
 name: scenario-concepting
 description: >
-  Step 1: define workshop goals, write the scenario brief and generate five ranked candidate worlds. Pick this to decide what the scenario is about before any prose is written.
+  Step 1: define workshop goals, write the Windfall scenario brief and generate five ranked candidate worlds. Pick this to decide what the scenario is about before any prose is written.
 ---
 
 # Scenario Concepting

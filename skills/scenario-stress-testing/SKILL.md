@@ -1,7 +1,7 @@
 ---
 name: scenario-stress-testing
 description: >
-  Critique a draft with four adversarial judges and a simulated workshop; returns ranked findings with fixes. Pick this to find weak spots without rewriting the scenario.
+  Critique a draft Windfall scenario with four adversarial judges and a simulated workshop; returns ranked findings with fixes. Pick this to find weak spots without rewriting.
 ---
 
 # Scenario Stress Testing

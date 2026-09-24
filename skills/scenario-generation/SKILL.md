@@ -1,7 +1,7 @@
 ---
 name: scenario-generation
 description: >
-  Full pipeline in one go: brief, concepts, draft, stress test, final scenario for an AI and economic change workshop. Pick this to start from scratch and get a finished scenario.
+  Full pipeline in one go: brief, concepts, draft, stress test, final Windfall scenario for an AI and economic change workshop. Pick this to start from scratch and get a finished scenario.
 ---
 
 # Scenario Generation

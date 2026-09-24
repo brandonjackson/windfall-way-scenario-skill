@@ -1,7 +1,7 @@
 ---
 name: scenario-drafting
 description: >
-  Step 2: turn a chosen concept into finished narrative prose, then stress test and tune it. Pick this to write a scenario from a concept or revise an existing draft.
+  Step 2: turn a chosen concept into finished Windfall narrative prose, then stress test and tune it. Pick this to write a scenario from a concept or revise an existing draft.
 ---
 
 # Scenario Drafting
