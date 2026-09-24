@@ -12,6 +12,12 @@ hedging — the scenario presents its world as fact. There's no "might" or
 "could" — that tentativeness is left for the workshop discussion, not
 the text.
 
+## Social-Contract Altitude
+
+Scenarios are pitched at the **social contract**, the deal between
+citizens, firms and the state, not at one system, sector or instrument.
+Specific concerns in the brief are lenses, not the spine.
+
 ## Horizon and Register
 
 The planning horizon (H1/H2/H3) shapes the register of the scenario —
