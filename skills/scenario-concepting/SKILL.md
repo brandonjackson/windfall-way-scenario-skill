@@ -1,7 +1,7 @@
 ---
 name: scenario-concepting
 description: >
-  Stage 1 of the Windall Scenario pipeline. Defines workshop goals, writes
+  Stage 1 of the Windall Scenario pipeline: defines workshop goals, writes
   the scenario brief and generates candidate storylines spanning many worlds. 
   Pick this to decide what the scenario is about before any prose is written.
 ---
