@@ -1,17 +1,7 @@
 ---
 name: scenario-drafting
 description: >
-  The back half of the scenario pipeline: turn a chosen scenario concept
-  into finished narrative prose and tune it until it provokes the right
-  workshop conversation. Drafts in house style, runs the
-  scenario-stress-testing loop, revises against the findings, finesses the
-  wording, and documents the deliberate choices. Use when the user has a
-  concept, brief, or premise and wants the scenario written; wants an
-  existing draft revised, tightened, or tuned for a specific audience; or
-  asks to rewrite a scenario in house style. For generating and ranking
-  candidate worlds first, use scenario-concepting; for diagnosis only
-  without revision, use scenario-stress-testing; for the whole pipeline in
-  one pass, use scenario-generation.
+  Step 2: turn a chosen concept into finished narrative prose, then stress test and tune it. Pick this to write a scenario from a concept or revise an existing draft.
 ---
 
 # Scenario Drafting
