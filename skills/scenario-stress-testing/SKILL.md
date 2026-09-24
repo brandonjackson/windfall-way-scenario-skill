@@ -1,16 +1,7 @@
 ---
 name: scenario-stress-testing
 description: >
-  Pressure-test a draft workshop scenario before it goes in front of a
-  room: structured stress-test questions, four adversarial judges
-  (Economist, Citizen, Policymaker, Storyteller), and a simulation of how
-  the workshop conversation will actually go. Produces a severity-ranked
-  findings file with a concrete fix for each finding. Use when the user
-  asks to stress test, pressure-test, critique, red-team, or sanity-check
-  a scenario, wants to know where a scenario will get attacked, or asks
-  how a workshop will react to a draft. Also invoked by scenario-drafting
-  as its revision loop. For writing or revising the scenario itself, use
-  scenario-drafting.
+  Critique a draft Windfall scenario with four adversarial judges and a simulated workshop; returns ranked findings with fixes. Pick this to find weak spots without rewriting.
 ---
 
 # Scenario Stress Testing

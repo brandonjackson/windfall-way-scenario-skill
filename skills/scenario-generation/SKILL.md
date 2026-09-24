@@ -1,20 +1,9 @@
 ---
 name: scenario-generation
 description: >
-  End-to-end production of a narrative scenario for a policy workshop on
-  AI and economic change: information gathering, brief, concepting,
-  selection, drafting, stress testing, and a tuned final scenario — in
-  one shot, or with the user approving each stage, or with the user
-  picking the concept. Use when the user wants a complete scenario
-  produced from a standing start — "write me a scenario for the DSIT
-  workshop", "I need a Windfall scenario for Tuesday", "run the whole
-  scenario pipeline" — or mentions scenario planning, scenario workshops,
-  Windfall, Dator's Four Futures, the diffusion/distribution quadrant, or
-  named scenarios like "Hollow Boom" or "Crossing the Threshold" and wants
-  the finished article. For a single stage on its own, use
-  scenario-concepting (brief and concepts), scenario-drafting (concept to
-  narrative), or scenario-stress-testing (pressure-test an existing
-  draft) instead.
+  Full Windfall Scenario pipeline in one go: brief, concepts, draft, 
+  stress test, final scenario for an AI and economic change workshop. 
+  Pick this to start from scratch and get a finished scenario.
 ---
 
 # Scenario Generation

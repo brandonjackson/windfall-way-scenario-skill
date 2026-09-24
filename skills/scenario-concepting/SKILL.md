@@ -1,18 +1,9 @@
 ---
 name: scenario-concepting
 description: >
-  The front half of the scenario pipeline: information gathering, goal
-  definition, and concept generation for policy workshops on AI and
-  economic change.
-  Produces a scenario brief and five fully worked, ranked concepts —
-  candidate worlds with their causal models — ready for drafting. Use when
-  the user wants to write a scenario brief, define a workshop's goals,
-  explore possible worlds, generate or rank scenario concepts, or work out
-  what a scenario should be about before any prose is written. Also use
-  when mapping a possibility space with a framework such as Dator's Four
-  Futures or the AI diffusion/distribution quadrant. For turning a chosen
-  concept into narrative prose, use scenario-drafting; for the whole
-  pipeline in one pass, use scenario-generation.
+  Stage 1 of the Windall Scenario pipeline. Defines workshop goals, writes
+  the scenario brief and generates candidate storylines spanning many worlds. 
+  Pick this to decide what the scenario is about before any prose is written.
 ---
 
 # Scenario Concepting
