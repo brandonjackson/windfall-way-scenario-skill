@@ -8,23 +8,32 @@ stress tests, templates, and a corpus of past scenarios.
 
 | Skill | Covers | Use when |
 |---|---|---|
-| **scenario-generation** | The whole pipeline, one pass | "Write me a scenario for the DSIT workshop" |
-| **scenario-concepting** | Intake, brief, five ranked concepts | Working out what the scenario should be about |
+| **scenario-generation** | The whole pipeline, one shot or stage by stage | "Write me a scenario for the DSIT workshop" |
+| **scenario-concepting** | Information gathering, brief, five ranked concepts | Working out what the scenario should be about |
 | **scenario-drafting** | Draft, stress-test loop, tune | Turning a chosen concept into finished prose |
 | **scenario-stress-testing** | Judges, categories, workshop simulation | Pressure-testing a draft before it meets a room |
 
+The pipeline has seven stages, named the same way everywhere:
+**information gathering, brief, concepting, selection, drafting, stress
+testing, tuning.**
+
 They compose: `scenario-generation` runs concepting, then selection, then
 drafting; `scenario-drafting` runs `scenario-stress-testing` as its
-revision loop. When the orchestrator invokes them, the stage skills run in
-**one-shot mode** — no clarifying questions, no stopping for approval,
-every artifact still produced in full.
+revision loop, in a fresh subagent context so the critic never sees the
+author's reasoning. Information gathering belongs to
+`scenario-concepting`; the orchestrator asks no questions of its own
+beyond one at the start: does the user want the scenario **in one shot**,
+to **approve at every stage**, or to **pick the concept** and otherwise
+leave it alone. In one shot, the stage skills run in **one-shot mode** —
+no clarifying questions, no stopping for approval, every artifact still
+produced in full.
 
 ```
-  intake ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
-                (brief + concepts)     (top rank)     │         ▲
-                                                      ▼         │
-                                            scenario-stress-testing
-                                                 (iterate ×2–3)
+  information ──► scenario-concepting ──► selection ──► scenario-drafting ──► deliver
+   gathering        (brief + concepts)   (top rank or      │         ▲
+                                          user's pick)     ▼         │
+                                                 scenario-stress-testing
+                                                      (iterate ×2–3)
 ```
 
 Each also stands alone: run concepting to explore a possibility space, or
@@ -34,10 +43,10 @@ stress testing against a draft written elsewhere.
 
 ```
 skills/
-  scenario-generation/SKILL.md     orchestrator
-  scenario-concepting/SKILL.md     stages 1–3
-  scenario-drafting/SKILL.md       stages 5–6
-  scenario-stress-testing/SKILL.md stages 6a–6b
+  scenario-generation/SKILL.md     orchestrator: selection, delivery
+  scenario-concepting/SKILL.md     information gathering, brief, concepting
+  scenario-drafting/SKILL.md       drafting, tuning
+  scenario-stress-testing/SKILL.md stress testing
 references/                        shared library — edit these as practice develops
   scenario-frameworks.md           frameworks and recurring patterns
   workshop-types.md                workshop formats
@@ -53,8 +62,9 @@ scripts/sync-bundled.sh            copies the library into each skill
 rather than the skills themselves where the change is about practice
 rather than process.
 
-Each skill then carries its own copy of exactly the files it reads, at
-`skills/<skill>/references/…`, `…/templates/…`, `…/scenarios/…`. The
+Each stage skill then carries its own copy of exactly the files it reads,
+at `skills/<skill>/references/…`, `…/templates/…`, `…/scenarios/…`
+(`scenario-generation` reads nothing of its own and bundles nothing). The
 duplication is deliberate: a skill only travels reliably with the files
 inside its own directory, and a skill that is synced or packaged on its
 own leaves anything beside `skills/` behind. A skill that cannot find a
