@@ -99,6 +99,10 @@ questions, skip this section and go straight to the brief.
   space? Take what the user names — don't offer a menu. If this comes
   back blank, choose from `scenario-frameworks.md` when you write the
   brief, and record the choice under **Assumptions**.
+- **Policy stance**: policy off (the default: the world is driven by
+  technology, markets and behaviour, government reacts, and the policy
+  response is left to the room) or policy on (a specific policy the
+  scenario should test)?
 - **Geographic and political setting**: where and when is this set?
 - **Thematic focus**: which economic, technological, or social dynamics
   matter most?
@@ -130,6 +134,7 @@ These shape everything downstream, so set them explicitly:
 - **AI capability assumptions** (free text, scaffolded by augmentation /
   substitution / full automation)
 - **Scenario framework** (name it, and state which position(s) are in play)
+- **Policy stance** (policy off unless the user asked otherwise)
 - **Timeline** (when the scenario is set, and the range of events covered)
 
 ### Boundary setting
@@ -230,9 +235,8 @@ five satisfy them:
   the audience's self-image.
 - **At least one must be undramatic** — no shock, no threshold, just
   compounding pressure. Workshops overreact to catastrophe.
-- **Every concept is policy off and pitched at the social contract**:
-  driven by forces, not an invented policy, with the brief's specific
-  concerns as lenses rather than the spine.
+- **Every concept is pitched at the social contract**, with the brief's
+  specific concerns as lenses rather than the spine.
 - **Not all five may end in the same kind of bind** (fiscal, political,
   distributional, geopolitical). Vary what the room is handed.
 

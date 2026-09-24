@@ -12,15 +12,11 @@ hedging — the scenario presents its world as fact. There's no "might" or
 "could" — that tentativeness is left for the workshop discussion, not
 the text.
 
-## Policy Off, Social-Contract Altitude
+## Social-Contract Altitude
 
-Scenarios are **policy off**: the world is driven by technology, markets
-and behaviour, and government reacts rather than enacting a designed
-response. No invented Act, programme or reform drives the story; the
-policy response is what the room produces. They are pitched at the
-**social contract** — the deal between citizens, firms and the state —
-not at one system or instrument. Specific concerns in the brief are
-lenses, not the spine.
+Scenarios are pitched at the **social contract**, the deal between
+citizens, firms and the state, not at one system, sector or instrument.
+Specific concerns in the brief are lenses, not the spine.
 
 ## Horizon and Register
 
