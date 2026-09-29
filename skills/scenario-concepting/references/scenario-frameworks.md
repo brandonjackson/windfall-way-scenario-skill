@@ -131,3 +131,58 @@ but building blocks — recognisable shapes a concept can take.
 - The axes or structural dimensions
 - The positions it generates (with 2-3 sentence descriptions)
 - Which workshops or scenarios have used it -->
+
+---
+
+## AI Progress × Market Structure
+
+A three-scenario framework from the Windfall Trust and Partnership on AI
+report *AI Economic Scenarios in 2030*. It crosses how quickly AI
+becomes an economic force against how concentrated the model market is.
+Only three of the four cells are used: slow progress with a competitive
+market is excluded, because with deployment that narrow there is little
+gain for competition to redistribute (it would resemble Slow Burn), and
+it is unstable (cheap, capable models would drive adoption and tip the
+world into Open Competition).
+
+**Axes:**
+
+- **AI progress**: capability and adoption taken together, since both
+  set the economic effect and each reinforces the other. Slow progress
+  means today's approaches hit diminishing returns and gains are
+  incremental; fast progress means investment, breakthroughs and
+  AI-assisted research accelerate advances (after the OECD's "AI
+  Progress Slows" and "AI Progress Accelerates" trajectories).
+- **Market structure**: whether a handful of developers control the
+  most capable models and price well above cost (concentrated), or
+  several providers offer comparable capabilities and competition pushes
+  prices toward cost, leaving more value with deployers, workers and
+  consumers (competitive).
+
+**Positions:**
+
+- **Slow Burn** (slow progress, concentrated market): AI disappoints
+  without collapsing. Adoption stays shallow and concentrated in large
+  firms and digitised sectors; growth stays near trend amid a mild
+  investment correction. Unemployment barely moves, but weaker hiring,
+  graduate underemployment and thinning career ladders make work quietly
+  more precarious, and the modest gains go to large adopters and asset
+  owners — with no visible crisis to force a policy response.
+- **Few Winners** (fast progress, concentrated market): AI becomes an
+  economy-wide production technology faster than workers and
+  institutions can adjust. A few frontier developers and compute owners
+  price AI at a markup and capture the rents. Output and productivity
+  surge, but displacement outruns job creation: unemployment rises
+  sharply, median real wages stagnate, the labour share falls, and a
+  wage-based tax base erodes just as support needs rise.
+- **Open Competition** (fast progress, competitive market): the same
+  technological boom, but several capable providers push AI prices
+  toward cost, so value flows downstream to deploying firms and — where
+  sectors compete — to consumers through cheaper services. Growth is as
+  strong; unemployment peaks lower and recovers, and median real wages
+  rise. The bottlenecks move to energy, infrastructure, skills and
+  organisational capacity, and misuse and security risks grow.
+
+**Used in:** *AI Economic Scenarios in 2030* (Windfall Trust × Partnership
+on AI), building on the Shaping Economic Futures in the AI Era workshop,
+Washington, D.C. (July 2026).
